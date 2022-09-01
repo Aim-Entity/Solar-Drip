@@ -1,0 +1,18 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+.swiper-slide-bg1 {
+	background-image: url('../demos/store/images/slider/1.jpg');
+}
+
+.swiper-slide-bg2 {
+	background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.6)), url('../demos/store/images/slider/2.jpg');
+}
+
+.swiper-slide-bg3 {
+	background-image: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.3)), url('../demos/store/images/slider/3.jpg');
+}
