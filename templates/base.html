@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="{% static 'home/css/colors.php?color=222222' %}" type="text/css" /> <!-- Store Theme Color -->
 	<link rel="stylesheet" href="{% static 'home/demos/store/css/fonts.css' %}" type="text/css" /> <!-- Store Theme Font -->
 	<link rel="stylesheet" href="{% static 'home/demos/store/store.css' %}" type="text/css" /> <!-- Store Theme Custom CSS -->
+	<link rel="stylesheet" href="{% static 'base/css/custom.css' %}" type="text/css" />
 	<!-- / -->
 
   <!-- Stylesheets
@@ -268,6 +269,61 @@
 
 		</header><!-- #header end -->
 
+		<!-- Login/Register Modal -->
+		<div class="modal-register mfp-hide" id="modal-register">
+			<div class="card mx-auto" style="max-width: 540px;">
+				<div class="card-header py-3 bg-transparent center">
+					<h3 class="mb-0 fw-normal">Hello, Welcome Back</h3>
+				</div>
+				<div class="card-body mx-auto py-5" style="max-width: 70%;">
+					<form id="login-form" name="login-form" class="mb-0 row" action="#" method="post">
+
+						<div class="col-12">
+							<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control not-dark" placeholder="Username" />
+						</div>
+
+						<div class="col-12 mt-4">
+							<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control not-dark" placeholder="Password" />
+						</div>
+
+						<div class="col-12 text-end">
+							<a href="#" class="text-dark fw-light mt-2">Forgot Password?</a>
+						</div>
+
+						<div class="col-12 mt-4">
+							<button class="button w-100 m-0" id="login-form-submit" name="login-form-submit" value="login">Login</button>
+						</div>
+					</form>
+
+					<form id="signup-form" name="signup-form" class="mb-0 row" action="#" method="post">
+
+						<div class="col-12">
+							<input type="text" id="signup-form-username" name="signup-form-username" value="" class="form-control not-dark" placeholder="Email" />
+						</div>
+
+						<div class="col-12 mt-4">
+							<input type="password" id="signup-form-password" name="signup-form-password" value="" class="form-control not-dark" placeholder="Password" />
+						</div>
+
+						<div class="col-12 mt-4">
+							<input type="password" id="signup-form-password" name="signup-form-password" value="" class="form-control not-dark" placeholder="Confirm Password" />
+						</div>
+
+						<div class="col-12 mt-4">
+							<button class="button w-100 m-0" id="signup-form-submit" name="signup-form-submit" value="login">Sign Up</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="card-footer py-4 center signup-disclaimer">
+					<p class="mb-0">Don't have an account? <a class="toggle-authentication1"><u>Sign up</u></a></p>
+				</div>
+
+				<div class="card-footer py-4 center login-disclaimer">
+					<p class="mb-0">Already have an account? <a class="toggle-authentication2"><u>Login</u></a></p>
+				</div>
+			</div>
+		</div>
     {% block content %} ADD A CONTENT BLOCK {% endblock %}
 
     <!-- Footer
@@ -401,6 +457,7 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="{% static 'home/js/functions.js'%} "></script>
+	<script src="{% static 'base/css/custom.js' %}"></script>
 
 	<script>
 		if(window.innerWidth > 1000) {

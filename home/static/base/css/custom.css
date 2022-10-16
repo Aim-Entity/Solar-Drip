@@ -1,0 +1,15 @@
+#signup-form {
+  display: none;
+}
+
+.login-disclaimer {
+  display: none;
+}
+
+.login-disclaimer, .signup-disclaimer {
+  cursor: pointer;
+}
+
+#login-form input, #signup-form input {
+  display: none;
+}
